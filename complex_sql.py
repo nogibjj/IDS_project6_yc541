@@ -80,7 +80,7 @@ def main():
     )
     insertDB(
         cursor,
-        55177,  # 修正此处的job_id
+        55177,  
         "Amazon",
         "Associate Software Developer",
         "2023-09-27",
