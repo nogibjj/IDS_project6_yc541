@@ -123,14 +123,12 @@ def main():
     insertApplicantsDB(cursor, 7, 90102, "Eva Blue", "2023-09-23")
 
     # Sample query: complexQuery
-    print(complexQuery(cursor))
+    results = complexQuery(cursor)
+    for row in results:
+        print(row)
 
     conn.commit()
     conn.close()
-
 if __name__ == "__main__":
     main()
 
-
-if __name__ == "__main__":
-    main()
